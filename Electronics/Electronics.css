@@ -204,7 +204,7 @@ input{
     grid-template-columns: repeat(3,1fr);
     gap:10px;
     grid-template-rows: auto;
-    border:2px solid black;
+    border:0px solid black;
 }
 #cont>div img{
     width:40%;
@@ -230,7 +230,64 @@ box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     margin-top:23px;
 }
 #cont>div>button:hover{
-    background-color:#FF66B2;
+    background-color:#FF007F;
 
 }
+#main{
+    height:40px;
+    width:100%;
+    border:0px solid black;
+}
+#cont>div{
+    margin-left:50px;
+}
+/* footer section */
+.footer{
+    height:400px;
+    width:100%;
+    margin:auto;
+    background-color:lightgray;
+    display:grid;
+    grid-template-columns: repeat(5,1fr);
+    margin-top:100px;
+    gap:12px;
+    text-align:center;
+}
+.footer>div{
+    border:0px solid black;
+padding-top:50px;
+}
+.footer>div img{
+    width:40%;
+    margin-top:50px;
+}
+.footer>div:nth-child(1){
+    width:400px;
+}
+.footer>div h2,h3{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+.footer>div p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-top:20px;
+}
+.fa-facebook{
+    color:blue;
+font-size:30px;
+margin-top:10px;
+}
+.fa-instagram{
+    color:red;
+    font-size:30px;
+}
+.fa-youtube{
+    color:red;
+    font-size:30px;
+}
+.fa-twitter{
+    color:blue;
+    font-size:30px;
+}
+
 

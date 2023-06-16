@@ -1,6 +1,7 @@
 // fetching from api
 
 let arr=[]  //we are taking this bag because on line number 6 we want to save the data globally not only locally
+let cartItems=JSON.parse(localStorage.getItem("cart"))||[];
 let url=fetch("https://dbioz2ek0e.execute-api.ap-south-1.amazonaws.com/mockapi/get-tech-products")
 .then((res)=>res.json())    //returning the data and we are using json for converting the given data into readable data
 .then((datas)=>{
@@ -35,6 +36,12 @@ function displayCards(datas){
     let CartBtn=document.createElement("Button");
     CartBtn.innerText="Add to Cart";
 
+    CartBtn.addEventListener("click",function(){
+      cartItems.push(elem);
+      localStorage.setItem("cart",JSON.stringify(cartItems))
+      
+    })
+
     divs.append(image,brand,details,price,category,CartBtn)
     document.querySelector("#cont").append(divs);
 
@@ -53,3 +60,6 @@ function find(){
   displayCards(searchData);
     
 }
+
+
+
