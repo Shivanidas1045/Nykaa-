@@ -178,10 +178,16 @@ form>p{
 form>p{
     text-align:center;
 }
-form>button{
-    background-color: #FF007F;
-    border-radius: 20px;
+
+form>a{
+    text-decoration: none;
     color:white;
-    border:none;
-    
+    background-color:#FF007F;
+    padding:12px;
+    border-radius:20px;
+    margin-left:200px;
+
+}
+form>a:hover{
+    background-color:#FF66B2;
 }
